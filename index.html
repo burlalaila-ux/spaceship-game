@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raumschiff Spiel - Space Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <canvas id="gameCanvas"></canvas>
+        
+        <div class="ui-panel">
+            <div class="autopilot-info">
+                <div class="pilot-avatar">🤖</div>
+                <div class="pilot-text">
+                    <h3>Autopilot: Keira</h3>
+                    <p id="dialogText">Willkommen an Bord, Lando!</p>
+                </div>
+            </div>
+            
+            <div class="status-bar">
+                <div class="status-item">
+                    <span>Geschwindigkeit:</span>
+                    <div id="speedometer" class="bar">
+                        <div class="fill" style="width: 60%"></div>
+                    </div>
+                </div>
+                <div class="status-item">
+                    <span>Brennstoff:</span>
+                    <div id="fuel-bar" class="bar">
+                        <div class="fill" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="status-item">
+                    <span>Schild:</span>
+                    <div id="shield-bar" class="bar">
+                        <div class="fill" style="width: 100%"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="controls">
+                <p class="hint">Pfeiltasten: Steuern | SPACE: Landen | P: Pause</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
